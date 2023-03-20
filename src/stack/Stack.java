@@ -1,5 +1,7 @@
 package stack;
+
 public class Stack {
+    
     static final int MAX_SIZE = 1000; //Max stack size.
     int top;
     int[] a = new int[MAX_SIZE];
