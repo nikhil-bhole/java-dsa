@@ -19,7 +19,7 @@ public class Stack {
             try {
                 throw new Exception();
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                System.out.println("Stackoverflow.");
             }
         } else {
             a[++top] = x;
@@ -57,7 +57,9 @@ public class Stack {
         stack.push(1);
         stack.push(2);
         stack.push(3);
-
+        stack.push(3);
+        stack.push(3);
+        stack.push(3);
         stack.print();
         stack.pop();
         stack.print();
